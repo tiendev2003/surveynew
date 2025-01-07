@@ -1,0 +1,13 @@
+.charts-container {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .charts-container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .charts-container canvas {
+    width: 45%;
+  }
+}
