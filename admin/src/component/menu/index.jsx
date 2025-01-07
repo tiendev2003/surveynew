@@ -118,7 +118,7 @@ function Menu({ toggleMenu, menu }) {
                             <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zm0-10v2h14V7H7z"/>
                           </svg>
                         </span>
-                        <span className="menu-bar__name">Ngân hàng câu hỏi</span>
+                        <span className="menu-bar__name">Danh sách câu hỏi</span>
                       </span>
                     </Link>
                   </li>

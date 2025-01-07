@@ -227,13 +227,13 @@ const DanhSachKhaoSat = () => {
                     </tr>
                   </thead>
                   <tbody className="crancy-table__body">
-                    {currentSurveys.map((survey) => {
+                    {currentSurveys.map((survey,index) => {
                       const isPastEndDate =
                         new Date(survey.end_date) < new Date();
                       return (
-                        <tr key={survey.id}>
+                        <tr key={index}>
                           <td className="crancy-table__column-1 crancy-table__data-1">
-                            {survey.id}
+                            {index+1}
                           </td>
                           <td className="crancy-table__column-2 crancy-table__data-2">
                             {survey.title}

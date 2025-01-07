@@ -99,15 +99,15 @@ function SurveyList() {
                         </tr>
                       </thead>
                       <tbody className="crancy-table__body">
-                        {khaosats.map((survey) => {
+                        {khaosats.map((survey,index) => {
                           const isExpired =
                             new Date(survey.end_date) < new Date();
                           const isStarted =
                             new Date(survey.start_date) <= new Date();
                           return (
-                            <tr key={survey.id}>
+                            <tr key={index}>
                               <td className="crancy-table__column-1 crancy-table__data-1">
-                                {survey.id}
+                                {index+1}
                               </td>
                               <td className="crancy-table__column-2 crancy-table__data-2">
                                 {survey.title}
